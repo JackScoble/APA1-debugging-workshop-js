@@ -1,8 +1,7 @@
 function sumDigits(num) {
   let sum = 0;
-  while (num > 0) {
-    sum += num % 10;
-    num--;
+  for (digit of String(num)) {
+    sum += Number(digit);
   }
   return sum;
 }
